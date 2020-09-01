@@ -1,14 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8521ea5a-7286-40c8-9496-ec98f84a4aa5" name="Default Changelist" comment="" />
+    <list default="true" id="8521ea5a-7286-40c8-9496-ec98f84a4aa5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/controllers/ProjectController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/exceptions/CustomResponseEntityExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/exceptions/ProjectIdException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/exceptions/ProjectIdExceptionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/repositories/ProjectRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/services/MapValidationErrorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/services/ProjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPMToolFullStack/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PPMToolFullStack/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/domain/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/domain/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPMToolFullStack/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="1grgVR7jMPeAaB7wdyBdoyGeXc8" />
   <component name="ProjectLevelVcsManager">
@@ -19,19 +53,41 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PpmtoolApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ppmtool" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.geoflev.ppmtool.PpmtoolApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -45,7 +101,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598878149395</updated>
-      <workItem from="1598878150612" duration="469000" />
+      <workItem from="1598878150612" duration="4429000" />
+      <workItem from="1598953753475" duration="7509000" />
     </task>
     <servers />
   </component>
@@ -57,5 +114,69 @@
       <screen x="0" y="23" width="1280" height="711" />
     </state>
     <state x="366" y="187" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1280.711@0.23.1280.711" timestamp="1598878483555" />
+    <state x="453" y="100" width="374" height="634" key="#com.intellij.ide.util.MemberChooser" timestamp="1598960114833">
+      <screen x="0" y="23" width="1280" height="711" />
+    </state>
+    <state x="453" y="100" width="374" height="634" key="#com.intellij.ide.util.MemberChooser/0.23.1280.711@0.23.1280.711" timestamp="1598960114833" />
+    <state width="1238" height="175" key="GridCell.Tab.0.bottom" timestamp="1598961649651">
+      <screen x="0" y="23" width="1280" height="711" />
+    </state>
+    <state width="1238" height="175" key="GridCell.Tab.0.bottom/0.23.1280.711@0.23.1280.711" timestamp="1598961649651" />
+    <state width="1238" height="175" key="GridCell.Tab.0.center" timestamp="1598961649650">
+      <screen x="0" y="23" width="1280" height="711" />
+    </state>
+    <state width="1238" height="175" key="GridCell.Tab.0.center/0.23.1280.711@0.23.1280.711" timestamp="1598961649650" />
+    <state width="1238" height="175" key="GridCell.Tab.0.left" timestamp="1598961649650">
+      <screen x="0" y="23" width="1280" height="711" />
+    </state>
+    <state width="1238" height="175" key="GridCell.Tab.0.left/0.23.1280.711@0.23.1280.711" timestamp="1598961649650" />
+    <state width="1238" height="175" key="GridCell.Tab.0.right" timestamp="1598961649650">
+      <screen x="0" y="23" width="1280" height="711" />
+    </state>
+    <state width="1238" height="175" key="GridCell.Tab.0.right/0.23.1280.711@0.23.1280.711" timestamp="1598961649650" />
+    <state width="1238" height="175" key="GridCell.Tab.1.bottom" timestamp="1598961649652">
+      <screen x="0" y="23" width="1280" height="711" />
+    </state>
+    <state width="1238" height="175" key="GridCell.Tab.1.bottom/0.23.1280.711@0.23.1280.711" timestamp="1598961649652" />
+    <state width="1238" height="175" key="GridCell.Tab.1.center" timestamp="1598961649651">
+      <screen x="0" y="23" width="1280" height="711" />
+    </state>
+    <state width="1238" height="175" key="GridCell.Tab.1.center/0.23.1280.711@0.23.1280.711" timestamp="1598961649651" />
+    <state width="1238" height="175" key="GridCell.Tab.1.left" timestamp="1598961649651">
+      <screen x="0" y="23" width="1280" height="711" />
+    </state>
+    <state width="1238" height="175" key="GridCell.Tab.1.left/0.23.1280.711@0.23.1280.711" timestamp="1598961649651" />
+    <state width="1238" height="175" key="GridCell.Tab.1.right" timestamp="1598961649652">
+      <screen x="0" y="23" width="1280" height="711" />
+    </state>
+    <state width="1238" height="175" key="GridCell.Tab.1.right/0.23.1280.711@0.23.1280.711" timestamp="1598961649652" />
+    <state width="1228" height="219" key="GridCell.Tab.2.bottom" timestamp="1598953748626">
+      <screen x="0" y="23" width="1280" height="711" />
+    </state>
+    <state width="1228" height="219" key="GridCell.Tab.2.bottom/0.23.1280.711@0.23.1280.711" timestamp="1598953748626" />
+    <state width="1228" height="219" key="GridCell.Tab.2.center" timestamp="1598953748626">
+      <screen x="0" y="23" width="1280" height="711" />
+    </state>
+    <state width="1228" height="219" key="GridCell.Tab.2.center/0.23.1280.711@0.23.1280.711" timestamp="1598953748626" />
+    <state width="1228" height="219" key="GridCell.Tab.2.left" timestamp="1598953748625">
+      <screen x="0" y="23" width="1280" height="711" />
+    </state>
+    <state width="1228" height="219" key="GridCell.Tab.2.left/0.23.1280.711@0.23.1280.711" timestamp="1598953748625" />
+    <state width="1228" height="219" key="GridCell.Tab.2.right" timestamp="1598953748626">
+      <screen x="0" y="23" width="1280" height="711" />
+    </state>
+    <state width="1228" height="219" key="GridCell.Tab.2.right/0.23.1280.711@0.23.1280.711" timestamp="1598953748626" />
+    <state x="173" y="40" key="Maven.ArtifactSearchDialog" timestamp="1598953742803">
+      <screen x="0" y="23" width="1280" height="711" />
+    </state>
+    <state x="173" y="40" key="Maven.ArtifactSearchDialog/0.23.1280.711@0.23.1280.711" timestamp="1598953742803" />
+    <state x="141" y="23" width="997" height="711" key="SettingsEditor" timestamp="1598879430109">
+      <screen x="0" y="23" width="1280" height="711" />
+    </state>
+    <state x="141" y="23" width="997" height="711" key="SettingsEditor/0.23.1280.711@0.23.1280.711" timestamp="1598879430109" />
+    <state x="305" y="58" width="670" height="676" key="search.everywhere.popup" timestamp="1598958813945">
+      <screen x="0" y="23" width="1280" height="711" />
+    </state>
+    <state x="305" y="58" width="670" height="676" key="search.everywhere.popup/0.23.1280.711@0.23.1280.711" timestamp="1598958813945" />
   </component>
 </project>
