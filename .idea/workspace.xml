@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8521ea5a-7286-40c8-9496-ec98f84a4aa5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/controllers/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/controllers/ProjectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ppmtool-react-client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ppmtool-react-client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ppmtool-react-client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ppmtool-react-client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ppmtool-react-client/src/actions/projectActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/ppmtool-react-client/src/actions/projectActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ppmtool-react-client/src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/ppmtool-react-client/src/actions/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ppmtool-react-client/src/components/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/ppmtool-react-client/src/components/Dashboard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ppmtool-react-client/src/components/Project/AddProject.js" beforeDir="false" afterPath="$PROJECT_DIR$/ppmtool-react-client/src/components/Project/AddProject.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ppmtool-react-client/src/reducers/errorReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/ppmtool-react-client/src/reducers/errorReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ppmtool-react-client/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ppmtool-react-client/src/reducers/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1598878149395</updated>
       <workItem from="1598878150612" duration="4429000" />
-      <workItem from="1598953753475" duration="8245000" />
+      <workItem from="1598953753475" duration="8782000" />
     </task>
     <servers />
   </component>
@@ -110,38 +114,38 @@
       <screen x="0" y="23" width="1280" height="711" />
     </state>
     <state x="453" y="100" width="374" height="634" key="#com.intellij.ide.util.MemberChooser/0.23.1280.711@0.23.1280.711" timestamp="1598960114833" />
-    <state width="1238" height="175" key="GridCell.Tab.0.bottom" timestamp="1599040202822">
+    <state width="1238" height="175" key="GridCell.Tab.0.bottom" timestamp="1599040361653">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
-    <state width="1238" height="175" key="GridCell.Tab.0.bottom/0.23.1280.711@0.23.1280.711" timestamp="1599040202822" />
-    <state width="1238" height="175" key="GridCell.Tab.0.center" timestamp="1599040202820">
+    <state width="1238" height="175" key="GridCell.Tab.0.bottom/0.23.1280.711@0.23.1280.711" timestamp="1599040361653" />
+    <state width="1238" height="175" key="GridCell.Tab.0.center" timestamp="1599040361651">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
-    <state width="1238" height="175" key="GridCell.Tab.0.center/0.23.1280.711@0.23.1280.711" timestamp="1599040202820" />
-    <state width="1238" height="175" key="GridCell.Tab.0.left" timestamp="1599040202819">
+    <state width="1238" height="175" key="GridCell.Tab.0.center/0.23.1280.711@0.23.1280.711" timestamp="1599040361651" />
+    <state width="1238" height="175" key="GridCell.Tab.0.left" timestamp="1599040361647">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
-    <state width="1238" height="175" key="GridCell.Tab.0.left/0.23.1280.711@0.23.1280.711" timestamp="1599040202819" />
-    <state width="1238" height="175" key="GridCell.Tab.0.right" timestamp="1599040202821">
+    <state width="1238" height="175" key="GridCell.Tab.0.left/0.23.1280.711@0.23.1280.711" timestamp="1599040361647" />
+    <state width="1238" height="175" key="GridCell.Tab.0.right" timestamp="1599040361652">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
-    <state width="1238" height="175" key="GridCell.Tab.0.right/0.23.1280.711@0.23.1280.711" timestamp="1599040202821" />
-    <state width="1238" height="175" key="GridCell.Tab.1.bottom" timestamp="1599040202824">
+    <state width="1238" height="175" key="GridCell.Tab.0.right/0.23.1280.711@0.23.1280.711" timestamp="1599040361652" />
+    <state width="1238" height="175" key="GridCell.Tab.1.bottom" timestamp="1599040361657">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
-    <state width="1238" height="175" key="GridCell.Tab.1.bottom/0.23.1280.711@0.23.1280.711" timestamp="1599040202824" />
-    <state width="1238" height="175" key="GridCell.Tab.1.center" timestamp="1599040202823">
+    <state width="1238" height="175" key="GridCell.Tab.1.bottom/0.23.1280.711@0.23.1280.711" timestamp="1599040361657" />
+    <state width="1238" height="175" key="GridCell.Tab.1.center" timestamp="1599040361655">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
-    <state width="1238" height="175" key="GridCell.Tab.1.center/0.23.1280.711@0.23.1280.711" timestamp="1599040202823" />
-    <state width="1238" height="175" key="GridCell.Tab.1.left" timestamp="1599040202823">
+    <state width="1238" height="175" key="GridCell.Tab.1.center/0.23.1280.711@0.23.1280.711" timestamp="1599040361655" />
+    <state width="1238" height="175" key="GridCell.Tab.1.left" timestamp="1599040361654">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
-    <state width="1238" height="175" key="GridCell.Tab.1.left/0.23.1280.711@0.23.1280.711" timestamp="1599040202823" />
-    <state width="1238" height="175" key="GridCell.Tab.1.right" timestamp="1599040202823">
+    <state width="1238" height="175" key="GridCell.Tab.1.left/0.23.1280.711@0.23.1280.711" timestamp="1599040361654" />
+    <state width="1238" height="175" key="GridCell.Tab.1.right" timestamp="1599040361656">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
-    <state width="1238" height="175" key="GridCell.Tab.1.right/0.23.1280.711@0.23.1280.711" timestamp="1599040202823" />
+    <state width="1238" height="175" key="GridCell.Tab.1.right/0.23.1280.711@0.23.1280.711" timestamp="1599040361656" />
     <state width="1228" height="219" key="GridCell.Tab.2.bottom" timestamp="1598953748626">
       <screen x="0" y="23" width="1280" height="711" />
     </state>

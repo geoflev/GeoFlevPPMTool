@@ -1,5 +1,6 @@
 import { GET_ERRORS } from "../actions/types";
 
+//empty initial state
 const initialState = {};
 
 export default function (state = initialState, action) {
