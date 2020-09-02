@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8521ea5a-7286-40c8-9496-ec98f84a4aa5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ppmtool-react-client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ppmtool-react-client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ppmtool-react-client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ppmtool-react-client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/domain/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/domain/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ppmtool-react-client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/ppmtool-react-client/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ppmtool-react-client/src/actions/projectActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/ppmtool-react-client/src/actions/projectActions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ppmtool-react-client/src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/ppmtool-react-client/src/actions/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ppmtool-react-client/src/components/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/ppmtool-react-client/src/components/Dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ppmtool-react-client/src/components/Project/AddProject.js" beforeDir="false" afterPath="$PROJECT_DIR$/ppmtool-react-client/src/components/Project/AddProject.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ppmtool-react-client/src/reducers/errorReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/ppmtool-react-client/src/reducers/errorReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ppmtool-react-client/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ppmtool-react-client/src/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ppmtool-react-client/src/components/Project/ProjectItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/ppmtool-react-client/src/components/Project/ProjectItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ppmtool-react-client/src/reducers/projectReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/ppmtool-react-client/src/reducers/projectReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1598878149395</updated>
       <workItem from="1598878150612" duration="4429000" />
-      <workItem from="1598953753475" duration="8782000" />
+      <workItem from="1598953753475" duration="8797000" />
     </task>
     <servers />
   </component>
