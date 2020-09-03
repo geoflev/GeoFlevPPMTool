@@ -5,17 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8521ea5a-7286-40c8-9496-ec98f84a4aa5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/controllers/BacklogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/domain/Backlog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/domain/ProjectTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/repositories/BacklogRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/repositories/ProjectTaskRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/services/ProjectTaskService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/exceptions/ProjectNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/exceptions/ProjectNotFoundExceptionResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/domain/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/domain/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/services/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/services/ProjectService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PPMToolFullStack/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/controllers/BacklogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/controllers/BacklogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/domain/ProjectTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/domain/ProjectTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/exceptions/CustomResponseEntityExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/exceptions/CustomResponseEntityExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/exceptions/ProjectIdException.java" beforeDir="false" afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/exceptions/ProjectIdException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/repositories/ProjectTaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/repositories/ProjectTaskRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/services/ProjectTaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/services/ProjectTaskService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1598878149395</updated>
       <workItem from="1598878150612" duration="4429000" />
-      <workItem from="1598953753475" duration="18979000" />
+      <workItem from="1598953753475" duration="24844000" />
     </task>
     <servers />
   </component>
@@ -122,42 +120,42 @@
       <screen x="0" y="23" width="1280" height="711" />
     </state>
     <state x="366" y="187" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1280.711@0.23.1280.711" timestamp="1598878483555" />
-    <state x="453" y="100" width="535" height="634" key="#com.intellij.ide.util.MemberChooser" timestamp="1599133655861">
+    <state x="453" y="100" width="535" height="634" key="#com.intellij.ide.util.MemberChooser" timestamp="1599148230486">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
-    <state x="453" y="100" width="535" height="634" key="#com.intellij.ide.util.MemberChooser/0.23.1280.711@0.23.1280.711" timestamp="1599133655861" />
-    <state width="1238" height="485" key="GridCell.Tab.0.bottom" timestamp="1599145802159">
+    <state x="453" y="100" width="535" height="634" key="#com.intellij.ide.util.MemberChooser/0.23.1280.711@0.23.1280.711" timestamp="1599148230486" />
+    <state width="1238" height="137" key="GridCell.Tab.0.bottom" timestamp="1599150530086">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
-    <state width="1238" height="485" key="GridCell.Tab.0.bottom/0.23.1280.711@0.23.1280.711" timestamp="1599145802159" />
-    <state width="1238" height="485" key="GridCell.Tab.0.center" timestamp="1599145802158">
+    <state width="1238" height="137" key="GridCell.Tab.0.bottom/0.23.1280.711@0.23.1280.711" timestamp="1599150530086" />
+    <state width="1238" height="137" key="GridCell.Tab.0.center" timestamp="1599150530084">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
-    <state width="1238" height="485" key="GridCell.Tab.0.center/0.23.1280.711@0.23.1280.711" timestamp="1599145802158" />
-    <state width="1238" height="485" key="GridCell.Tab.0.left" timestamp="1599145802157">
+    <state width="1238" height="137" key="GridCell.Tab.0.center/0.23.1280.711@0.23.1280.711" timestamp="1599150530084" />
+    <state width="1238" height="137" key="GridCell.Tab.0.left" timestamp="1599150530084">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
-    <state width="1238" height="485" key="GridCell.Tab.0.left/0.23.1280.711@0.23.1280.711" timestamp="1599145802157" />
-    <state width="1238" height="485" key="GridCell.Tab.0.right" timestamp="1599145802159">
+    <state width="1238" height="137" key="GridCell.Tab.0.left/0.23.1280.711@0.23.1280.711" timestamp="1599150530084" />
+    <state width="1238" height="137" key="GridCell.Tab.0.right" timestamp="1599150530085">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
-    <state width="1238" height="485" key="GridCell.Tab.0.right/0.23.1280.711@0.23.1280.711" timestamp="1599145802159" />
-    <state width="1238" height="485" key="GridCell.Tab.1.bottom" timestamp="1599145802162">
+    <state width="1238" height="137" key="GridCell.Tab.0.right/0.23.1280.711@0.23.1280.711" timestamp="1599150530085" />
+    <state width="1238" height="137" key="GridCell.Tab.1.bottom" timestamp="1599150530088">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
-    <state width="1238" height="485" key="GridCell.Tab.1.bottom/0.23.1280.711@0.23.1280.711" timestamp="1599145802162" />
-    <state width="1238" height="485" key="GridCell.Tab.1.center" timestamp="1599145802161">
+    <state width="1238" height="137" key="GridCell.Tab.1.bottom/0.23.1280.711@0.23.1280.711" timestamp="1599150530088" />
+    <state width="1238" height="137" key="GridCell.Tab.1.center" timestamp="1599150530087">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
-    <state width="1238" height="485" key="GridCell.Tab.1.center/0.23.1280.711@0.23.1280.711" timestamp="1599145802161" />
-    <state width="1238" height="485" key="GridCell.Tab.1.left" timestamp="1599145802160">
+    <state width="1238" height="137" key="GridCell.Tab.1.center/0.23.1280.711@0.23.1280.711" timestamp="1599150530087" />
+    <state width="1238" height="137" key="GridCell.Tab.1.left" timestamp="1599150530086">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
-    <state width="1238" height="485" key="GridCell.Tab.1.left/0.23.1280.711@0.23.1280.711" timestamp="1599145802160" />
-    <state width="1238" height="485" key="GridCell.Tab.1.right" timestamp="1599145802162">
+    <state width="1238" height="137" key="GridCell.Tab.1.left/0.23.1280.711@0.23.1280.711" timestamp="1599150530086" />
+    <state width="1238" height="137" key="GridCell.Tab.1.right" timestamp="1599150530087">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
-    <state width="1238" height="485" key="GridCell.Tab.1.right/0.23.1280.711@0.23.1280.711" timestamp="1599145802162" />
+    <state width="1238" height="137" key="GridCell.Tab.1.right/0.23.1280.711@0.23.1280.711" timestamp="1599150530087" />
     <state width="1228" height="219" key="GridCell.Tab.2.bottom" timestamp="1598953748626">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
