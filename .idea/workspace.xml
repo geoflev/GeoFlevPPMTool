@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8521ea5a-7286-40c8-9496-ec98f84a4aa5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/controllers/BacklogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/domain/Backlog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/domain/ProjectTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/repositories/BacklogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/repositories/ProjectTaskRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/services/ProjectTaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/domain/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/domain/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ppmtool-react-client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/ppmtool-react-client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ppmtool-react-client/src/actions/projectActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/ppmtool-react-client/src/actions/projectActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ppmtool-react-client/src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/ppmtool-react-client/src/actions/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ppmtool-react-client/src/components/Project/ProjectItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/ppmtool-react-client/src/components/Project/ProjectItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ppmtool-react-client/src/reducers/projectReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/ppmtool-react-client/src/reducers/projectReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/services/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/java/io/geoflev/ppmtool/services/ProjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPMToolFullStack/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/PPMToolFullStack/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,12 +52,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -63,7 +70,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
@@ -96,54 +103,61 @@
       <option name="presentableId" value="Default" />
       <updated>1598878149395</updated>
       <workItem from="1598878150612" duration="4429000" />
-      <workItem from="1598953753475" duration="8797000" />
+      <workItem from="1598953753475" duration="18979000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="407" y="23" key="#Auto_Import" timestamp="1599144628893">
+      <screen x="0" y="23" width="1280" height="711" />
+    </state>
+    <state x="407" y="23" key="#Auto_Import/0.23.1280.711@0.23.1280.711" timestamp="1599144628893" />
     <state x="366" y="187" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598878483555">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
     <state x="366" y="187" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1280.711@0.23.1280.711" timestamp="1598878483555" />
-    <state x="453" y="100" width="374" height="634" key="#com.intellij.ide.util.MemberChooser" timestamp="1598960114833">
+    <state x="453" y="100" width="535" height="634" key="#com.intellij.ide.util.MemberChooser" timestamp="1599133655861">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
-    <state x="453" y="100" width="374" height="634" key="#com.intellij.ide.util.MemberChooser/0.23.1280.711@0.23.1280.711" timestamp="1598960114833" />
-    <state width="1238" height="175" key="GridCell.Tab.0.bottom" timestamp="1599040361653">
+    <state x="453" y="100" width="535" height="634" key="#com.intellij.ide.util.MemberChooser/0.23.1280.711@0.23.1280.711" timestamp="1599133655861" />
+    <state width="1238" height="485" key="GridCell.Tab.0.bottom" timestamp="1599145802159">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
-    <state width="1238" height="175" key="GridCell.Tab.0.bottom/0.23.1280.711@0.23.1280.711" timestamp="1599040361653" />
-    <state width="1238" height="175" key="GridCell.Tab.0.center" timestamp="1599040361651">
+    <state width="1238" height="485" key="GridCell.Tab.0.bottom/0.23.1280.711@0.23.1280.711" timestamp="1599145802159" />
+    <state width="1238" height="485" key="GridCell.Tab.0.center" timestamp="1599145802158">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
-    <state width="1238" height="175" key="GridCell.Tab.0.center/0.23.1280.711@0.23.1280.711" timestamp="1599040361651" />
-    <state width="1238" height="175" key="GridCell.Tab.0.left" timestamp="1599040361647">
+    <state width="1238" height="485" key="GridCell.Tab.0.center/0.23.1280.711@0.23.1280.711" timestamp="1599145802158" />
+    <state width="1238" height="485" key="GridCell.Tab.0.left" timestamp="1599145802157">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
-    <state width="1238" height="175" key="GridCell.Tab.0.left/0.23.1280.711@0.23.1280.711" timestamp="1599040361647" />
-    <state width="1238" height="175" key="GridCell.Tab.0.right" timestamp="1599040361652">
+    <state width="1238" height="485" key="GridCell.Tab.0.left/0.23.1280.711@0.23.1280.711" timestamp="1599145802157" />
+    <state width="1238" height="485" key="GridCell.Tab.0.right" timestamp="1599145802159">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
-    <state width="1238" height="175" key="GridCell.Tab.0.right/0.23.1280.711@0.23.1280.711" timestamp="1599040361652" />
-    <state width="1238" height="175" key="GridCell.Tab.1.bottom" timestamp="1599040361657">
+    <state width="1238" height="485" key="GridCell.Tab.0.right/0.23.1280.711@0.23.1280.711" timestamp="1599145802159" />
+    <state width="1238" height="485" key="GridCell.Tab.1.bottom" timestamp="1599145802162">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
-    <state width="1238" height="175" key="GridCell.Tab.1.bottom/0.23.1280.711@0.23.1280.711" timestamp="1599040361657" />
-    <state width="1238" height="175" key="GridCell.Tab.1.center" timestamp="1599040361655">
+    <state width="1238" height="485" key="GridCell.Tab.1.bottom/0.23.1280.711@0.23.1280.711" timestamp="1599145802162" />
+    <state width="1238" height="485" key="GridCell.Tab.1.center" timestamp="1599145802161">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
-    <state width="1238" height="175" key="GridCell.Tab.1.center/0.23.1280.711@0.23.1280.711" timestamp="1599040361655" />
-    <state width="1238" height="175" key="GridCell.Tab.1.left" timestamp="1599040361654">
+    <state width="1238" height="485" key="GridCell.Tab.1.center/0.23.1280.711@0.23.1280.711" timestamp="1599145802161" />
+    <state width="1238" height="485" key="GridCell.Tab.1.left" timestamp="1599145802160">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
-    <state width="1238" height="175" key="GridCell.Tab.1.left/0.23.1280.711@0.23.1280.711" timestamp="1599040361654" />
-    <state width="1238" height="175" key="GridCell.Tab.1.right" timestamp="1599040361656">
+    <state width="1238" height="485" key="GridCell.Tab.1.left/0.23.1280.711@0.23.1280.711" timestamp="1599145802160" />
+    <state width="1238" height="485" key="GridCell.Tab.1.right" timestamp="1599145802162">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
-    <state width="1238" height="175" key="GridCell.Tab.1.right/0.23.1280.711@0.23.1280.711" timestamp="1599040361656" />
+    <state width="1238" height="485" key="GridCell.Tab.1.right/0.23.1280.711@0.23.1280.711" timestamp="1599145802162" />
     <state width="1228" height="219" key="GridCell.Tab.2.bottom" timestamp="1598953748626">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
@@ -164,10 +178,10 @@
       <screen x="0" y="23" width="1280" height="711" />
     </state>
     <state x="173" y="40" key="Maven.ArtifactSearchDialog/0.23.1280.711@0.23.1280.711" timestamp="1598953742803" />
-    <state x="141" y="23" width="997" height="711" key="SettingsEditor" timestamp="1598879430109">
+    <state x="141" y="23" width="997" height="711" key="SettingsEditor" timestamp="1599130677583">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
-    <state x="141" y="23" width="997" height="711" key="SettingsEditor/0.23.1280.711@0.23.1280.711" timestamp="1598879430109" />
+    <state x="141" y="23" width="997" height="711" key="SettingsEditor/0.23.1280.711@0.23.1280.711" timestamp="1599130677583" />
     <state x="305" y="58" width="670" height="676" key="search.everywhere.popup" timestamp="1598958813945">
       <screen x="0" y="23" width="1280" height="711" />
     </state>

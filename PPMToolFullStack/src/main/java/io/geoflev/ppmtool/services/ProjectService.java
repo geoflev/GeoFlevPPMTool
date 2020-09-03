@@ -1,7 +1,9 @@
 package io.geoflev.ppmtool.services;
 
+import io.geoflev.ppmtool.domain.Backlog;
 import io.geoflev.ppmtool.domain.Project;
 import io.geoflev.ppmtool.exceptions.ProjectIdException;
+import io.geoflev.ppmtool.repositories.BacklogRepository;
 import io.geoflev.ppmtool.repositories.ProjectRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,10 +14,26 @@ public class ProjectService {
     @Autowired
     private ProjectRepository projectRepository;
 
+    @Autowired
+    private BacklogRepository backlogRepository;
+
     public Project saveOrUpdateProject(Project project){
         try{
             //catch duplicates in database
             project.setProjectIdentifier(project.getProjectIdentifier().toUpperCase());
+
+            //new project
+            if(project.getId() == null){
+                Backlog backlog = new Backlog();
+                project.setBacklog(backlog);
+                backlog.setProject(project);
+                backlog.setProjectIdentifier(project.getProjectIdentifier().toUpperCase());
+            }
+            //update without backlog being set to null
+            if(project.getId() != null){
+                project.setBacklog(backlogRepository.findByProjectIdentifier(project.getProjectIdentifier().toUpperCase()));
+            }
+
             return projectRepository.save(project);
         }catch (Exception e){
             throw new ProjectIdException("Project Id '" + project.getProjectIdentifier().toUpperCase() + "' already exists");
