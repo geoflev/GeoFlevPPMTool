@@ -14,7 +14,7 @@ public class ProjectTask {
     private Long id;
     @Column(updatable = false, unique = true)
     private String projectSequence;
-    @NotBlank(message="Please include project Summary")
+    @NotBlank(message = "Please include project Summary")
     private String summary;
     private String acceptanceCriteria;
     private String status;
@@ -141,12 +141,12 @@ public class ProjectTask {
     }
 
     @PrePersist
-    protected void onCreate(){
+    protected void onCreate() {
         this.created_At = new Date();
     }
 
     @PreUpdate
-    protected void onUpdate(){
+    protected void onUpdate() {
         this.updated_At = new Date();
     }
 

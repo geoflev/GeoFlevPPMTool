@@ -24,32 +24,34 @@ public class ProjectController {
     private MapValidationErrorService mapValidationErrorService;
 
     @PostMapping("")
-    public ResponseEntity<?> createNewProject(@Valid @RequestBody Project project, BindingResult result){
+    public ResponseEntity<?> createNewProject(@Valid @RequestBody Project project, BindingResult result) {
         //gia na gyrisw to invalid object string allazw to ResponseEntity se generic
         //kai gyrnaw new ResponseEntity<String> anti gia ResponseEntity<Project> poy htan prin
 
         ResponseEntity<?> errorMap = mapValidationErrorService.MapValidationService(result);
-        if(errorMap != null){ return errorMap; }
+        if (errorMap != null) {
+            return errorMap;
+        }
 
         Project project1 = projectService.saveOrUpdateProject(project);
         return new ResponseEntity<Project>(project1, HttpStatus.CREATED);
     }
 
     @GetMapping("/{projectId}")
-    public ResponseEntity<?> getProjectById(@PathVariable String projectId){
+    public ResponseEntity<?> getProjectById(@PathVariable String projectId) {
 
         Project project = projectService.findByProjectIdentifier(projectId);
-        return new ResponseEntity<Project>(project,HttpStatus.OK);
+        return new ResponseEntity<Project>(project, HttpStatus.OK);
     }
 
     @GetMapping("/all")
-    public Iterable<Project> getAllProjects(){
+    public Iterable<Project> getAllProjects() {
         return projectService.findAllProjects();
     }
 
     @DeleteMapping("/{projectId}")
-    public ResponseEntity<?> deleteProject(@PathVariable String projectId){
+    public ResponseEntity<?> deleteProject(@PathVariable String projectId) {
         projectService.deleteProjectByIdentifier(projectId);
-        return new ResponseEntity<String>("Project with ID: '"+projectId+"' was deleted!",HttpStatus.OK);
+        return new ResponseEntity<String>("Project with ID: '" + projectId + "' was deleted!", HttpStatus.OK);
     }
 }

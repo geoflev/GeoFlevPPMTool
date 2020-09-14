@@ -33,7 +33,7 @@ public class ProjectTaskService {
             projectTask.setProjectSequence(backlog.getProjectIdentifier() + "-" + backlogSequence);
             projectTask.setProjectIdentifier(projectIdentifier);
 
-            if(projectTask.getPriority() == null){
+            if(projectTask.getPriority() == 0 ||  projectTask.getPriority() == null){
                 projectTask.setPriority(3);
             }
 
@@ -80,4 +80,43 @@ public class ProjectTaskService {
 
         return projectTask;
     }
+
+    public ProjectTask updateByProjectSequence(ProjectTask updatedTask, String backlog_id, String pt_id){
+
+        //instead of repeating myself i use the above method
+        ProjectTask projectTask = findPTByProjectSequence(backlog_id, pt_id);
+        projectTask = updatedTask;
+        return projectTaskRepository.save(projectTask);
+    }
+
+    public void deletePTByProjectSequence(String backlog_id, String pt_id){
+
+        ProjectTask projectTask = findPTByProjectSequence(backlog_id, pt_id);
+
+//        manually deleting because relationship wasn't working
+//        we were getting 200 OK on delete but it wasn't deleting
+//        we had CascadeType.REFRESH on the wrong side of the relationship
+//        should be on Backlog side
+//        and we added orphanRemoval = true
+
+        projectTaskRepository.delete(projectTask);
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
