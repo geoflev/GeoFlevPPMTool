@@ -10,10 +10,10 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.security.Principal;
 
 @RestController
 @RequestMapping("/api/project")
-//
 @CrossOrigin
 public class ProjectController {
 
@@ -24,7 +24,8 @@ public class ProjectController {
     private MapValidationErrorService mapValidationErrorService;
 
     @PostMapping("")
-    public ResponseEntity<?> createNewProject(@Valid @RequestBody Project project, BindingResult result) {
+    public ResponseEntity<?> createNewProject(@Valid @RequestBody Project project, BindingResult result,
+                                              Principal principal) {
         //gia na gyrisw to invalid object string allazw to ResponseEntity se generic
         //kai gyrnaw new ResponseEntity<String> anti gia ResponseEntity<Project> poy htan prin
 
@@ -33,25 +34,26 @@ public class ProjectController {
             return errorMap;
         }
 
-        Project project1 = projectService.saveOrUpdateProject(project);
+        Project project1 = projectService.saveOrUpdateProject(project, principal.getName());
+        //pass the principal to set the relationship between project and the user
         return new ResponseEntity<Project>(project1, HttpStatus.CREATED);
     }
 
     @GetMapping("/{projectId}")
-    public ResponseEntity<?> getProjectById(@PathVariable String projectId) {
+    public ResponseEntity<?> getProjectById(@PathVariable String projectId, Principal principal) {
 
-        Project project = projectService.findByProjectIdentifier(projectId);
+        Project project = projectService.findByProjectIdentifier(projectId, principal.getName());
         return new ResponseEntity<Project>(project, HttpStatus.OK);
     }
 
     @GetMapping("/all")
-    public Iterable<Project> getAllProjects() {
-        return projectService.findAllProjects();
+    public Iterable<Project> getAllProjects(Principal principal) {
+        return projectService.findAllProjects(principal.getName());
     }
 
     @DeleteMapping("/{projectId}")
-    public ResponseEntity<?> deleteProject(@PathVariable String projectId) {
-        projectService.deleteProjectByIdentifier(projectId);
+    public ResponseEntity<?> deleteProject(@PathVariable String projectId, Principal principal) {
+        projectService.deleteProjectByIdentifier(projectId, principal.getName());
         return new ResponseEntity<String>("Project with ID: '" + projectId + "' was deleted!", HttpStatus.OK);
     }
 }
