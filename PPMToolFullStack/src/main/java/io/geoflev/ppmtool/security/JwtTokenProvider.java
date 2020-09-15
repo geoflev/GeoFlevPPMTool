@@ -1,8 +1,7 @@
 package io.geoflev.ppmtool.security;
 
 import io.geoflev.ppmtool.domain.User;
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.*;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Component;
 
@@ -21,8 +20,6 @@ public class JwtTokenProvider {
     public String generateToken(Authentication authentication){
 
         //get the authenticated user in type User
-        //Validate the token
-        //Get the user id from the token
 
         User user = (User) authentication.getPrincipal();
 
@@ -46,6 +43,34 @@ public class JwtTokenProvider {
                 .setExpiration(expiredDate)
                 .signWith(SignatureAlgorithm.HS512, SECRET)
                 .compact();
+    }
+
+    //Validate the token
+    public boolean validateToken(String token){
+        try {
+            Jwts.parser().setSigningKey(SECRET).parseClaimsJws(token);
+            return true;
+        }catch (SignatureException ex){
+            System.out.println("Invalid JWT Signature");
+        }catch (MalformedJwtException ex){
+            System.out.println("Invalid JWT Token");
+        }catch (ExpiredJwtException ex){
+            System.out.println("Expired JWT Token");
+        }catch (UnsupportedJwtException ex){
+            System.out.println("Unsupported JWT token");
+        }catch (IllegalArgumentException ex){
+            System.out.println("JWT claims string is empty");
+        }
+        return false;
+    }
+
+    //Get the user id from the token
+    public Long getUserIdFromJWT(String token){
+
+        Claims claims = Jwts.parser().setSigningKey(SECRET).parseClaimsJws(token).getBody();
+        String id = (String)claims.get("id");
+
+        return Long.parseLong(id);
     }
 
 
