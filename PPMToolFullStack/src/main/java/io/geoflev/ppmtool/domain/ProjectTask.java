@@ -1,5 +1,6 @@
 package io.geoflev.ppmtool.domain;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
@@ -19,6 +20,9 @@ public class ProjectTask {
     private String acceptanceCriteria;
     private String status;
     private Integer priority;
+    //need json format so it doesnt bug in react
+    //couldnt set the dueDate
+    @JsonFormat(pattern = "yyyy-mm-dd")
     private Date dueDate;
     //ManyToOne with Backlog
     //if i delete a projectTask that belongs to the backlog and backlog refreshes
@@ -29,8 +33,9 @@ public class ProjectTask {
 
     @Column(updatable = false)
     private String projectIdentifier;
-
+    @JsonFormat(pattern = "yyyy-mm-dd")
     private Date created_At;
+    @JsonFormat(pattern = "yyyy-mm-dd")
     private Date updated_At;
 
     public ProjectTask() {
