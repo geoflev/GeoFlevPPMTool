@@ -128,7 +128,7 @@ public class User implements UserDetails{
     @JsonIgnore
     public boolean isAccountNonExpired() {
         return true;
-        //can use for not subscribted accounts f.e.
+        //can use for not subscribed accounts f.e.
     }
 
     @Override

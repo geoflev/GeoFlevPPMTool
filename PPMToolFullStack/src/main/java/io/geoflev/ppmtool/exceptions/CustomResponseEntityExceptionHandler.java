@@ -9,7 +9,9 @@ import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 //ControllerAdvice : gives global exception handling for controllers
+//Controllers come lit here for advice with an exception
 @ControllerAdvice
+//its a contoller in a sense
 @RestController
 public class CustomResponseEntityExceptionHandler extends ResponseEntityExceptionHandler {
 

@@ -25,6 +25,7 @@ public class JWTAuthenticationEntryPoint implements AuthenticationEntryPoint {
         //    "password": "Invalid Password"
         //}
 
+        //InvalidLoginResponse class from exceptions
         InvalidLoginResponse loginResponse = new InvalidLoginResponse();
         //to return json
         String jsonLoginResponse = new Gson().toJson(loginResponse);

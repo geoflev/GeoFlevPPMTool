@@ -20,9 +20,11 @@ import static io.geoflev.ppmtool.security.SecurityConstants.SIGN_UP_URLS;
 
 @Configuration
 @EnableWebSecurity
+//for future role specific implementation
 @EnableGlobalMethodSecurity(securedEnabled = true,
         jsr250Enabled = true,
         prePostEnabled = true)
+//WebSecurityConfigurerAdapter provides default security configurations
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
@@ -53,13 +55,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
+        //disable it since we will use jwt
         http.cors().and().csrf().disable()
                 .exceptionHandling()
+                //manages what exceptions need to be thrown when user is not auth
                 .authenticationEntryPoint(unauthorizedHandler)
                 .and()
                 .sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-                //stateless means that we dont want to keep sessions, state(because we use Redux for it)
+                //stateless means that we dont want to save sessions, state(because we use Redux for it)
                 //or cookies because we use jwt
                 .and()
                 .headers().frameOptions().sameOrigin() //just to enable h2 DB(not going to use)
@@ -79,6 +83,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers(SIGN_UP_URLS).permitAll()
                 .antMatchers(H2_URL).permitAll()
                 //SecurityConstants
+                //any other request authenticated
                 .anyRequest().authenticated();
 
         http.addFilterBefore(jwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
